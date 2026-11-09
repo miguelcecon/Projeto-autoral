@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo do Vinil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Vinyl Universe <span>33⅓ RPM</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#repopularizacao">O Renascimento</a></li>
+        <li><a href="#colecao">Minha Coleção</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção História -->
+    <section id="historia" class="content-section">
+      <h2>A Origem do Vinil</h2>
+      <p>
+        A história do vinil começou na primeira metade do século XX. Antes dele, a música era gravada em discos de goma-laca de 78 RPM (rotações por minuto), que eram frágeis e tinham capacidade para poucas músicas por lado.
+      </p>
+      <p>
+        Em 1948, a gravadora Columbia Records introduziu o disco de **Long Play (LP)** feito de PVC (cloreto de polivinila), rodando a 33⅓ RPM. Essa novidade permitiu gravar até cerca de 22 minutos de áudio de cada lado, revolucionando a indústria da música e permitindo o nascimento dos álbuns conceituais como os conhecemos hoje.
+      </p>
+    </section>
+
+    <!-- Seção Repopularização -->
+    <section id="repopularizacao" class="content-section">
+      <h2>A Repopularização nos Dias Atuais</h2>
+      <p>
+        Mesmo com a chegada dos CDs, downloads digitais e plataformas de streaming, o disco de vinil nunca desapareceu por completo. Nas últimas décadas, ele viveu um retorno surpreendente.
+      </p>
+      <p>
+        O "renascimento do vinil" é movido pela busca por uma experiência musical física e tátil. Colecionadores e novos ouvintes valorizam a qualidade sonora orgânica, a arte em tamanho grande das capas e o ritual de retirar o disco da capa e posicionar a agulha. Hoje, grandes artistas lançam regularmente edições especiais em vinil colorido e pesado.
+      </p>
+    </section>
+
+    <!-- Seção Minha Coleção -->
+    <section id="colecao" class="content-section">
+      <h2>Minha Coleção</h2>
+      <p>Abaixo você pode ver minhas fotos e vídeos de discos da minha coleção pessoal.</p>
+      
+      <!-- Formulário para adicionar novos itens -->
+      <form id="media-form">
+        <h3>Adicionar Novo Item</h3>
+        <input type="text" id="title" placeholder="Nome do Álbum / Artista" required>
+        <select id="media-type" required>
+          <option value="image">Foto (URL)</option>
+          <option value="video">Vídeo (URL do MP4 ou Embed)</option>
+        </select>
+        <input type="url" id="media-url" placeholder="Cole o link (URL) da foto ou vídeo" required>
+        <button type="submit">Adicionar à Galeria</button>
+      </form>
+
+      <!-- Galeria de mídias adicionadas -->
+      <div id="gallery" class="gallery-grid">
+        <!-- Itens de exemplo iniciais -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=600" alt="Disco de Vinil">
+          <h3>Clássicos do Rock</h3>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=600" alt="Toca-discos">
+          <h3>Tocando no Fim de Semana</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Meu Site de Vinil | Desenvolvido para o GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
